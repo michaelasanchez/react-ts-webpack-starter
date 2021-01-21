@@ -63,10 +63,12 @@ module.exports = function makeWebpackConfig() {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer'),
-                ]
+              postcssOptions: {
+                plugins: function () {
+                  return [
+                    require('autoprefixer'),
+                  ]
+                }
               }
             }
           },
