@@ -77,6 +77,13 @@ module.exports = function makeWebpackConfig() {
           }
         ]
       },
+      {
+          test: /\.(png|jpe?g|svg)$/,
+          loader: 'file-loader',
+          options: {
+              name: 'assets/[name].[ext]',
+          }
+      },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       {
         enforce: 'pre',
