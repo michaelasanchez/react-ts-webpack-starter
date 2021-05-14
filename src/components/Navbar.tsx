@@ -1,13 +1,12 @@
-import * as React from "react"
+import React = require('react');
+import { Navbar as BSNavbar } from 'react-bootstrap';
 
-import { Navbar } from 'react-bootstrap'
+interface NavbarProps {}
 
-type HomeProps = {};
-
-export const Home: React.FunctionComponent<HomeProps> = ({ }) => {
+export const Navbar: React.FunctionComponent<NavbarProps> = ({}) => {
   return (
-    <Navbar bg="dark">
-      <Navbar.Brand>Brand text</Navbar.Brand>
-    </Navbar>
+    <BSNavbar bg="dark" variant="dark">
+      <BSNavbar.Brand>Brand</BSNavbar.Brand>
+    </BSNavbar>
   );
-}
+};

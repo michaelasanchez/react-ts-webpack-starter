@@ -1,21 +1,26 @@
 html,
-body {
+body,
+.app {
   height: 100%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
+main {
+  display: flex !important;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  
+  height: 100%;
 }
 
-h4 {
-    text-align: center;
-}
+$img-diameter: 220px;
 
 .img-container {
-  height: 220px;
-  width: 220px;
+  height: $img-diameter;
+  width: $img-diameter;
+
+  max-height: 100%;
+  max-width: 100%;
 
   border: 3px solid #000;
   border-radius: 50%;
