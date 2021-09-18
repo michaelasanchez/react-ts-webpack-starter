@@ -12,7 +12,7 @@
   "author": "Michael Sanchez",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.1.1",
     "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "react": "^16.14.0",
@@ -29,7 +29,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^5.0.0",
     "postcss-loader": "^4.2.0",
-    "react-bootstrap": "^1.0.0-beta.17",
+    "react-bootstrap": "^2.0.0-beta.6",
     "sass-loader": "^10.1.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.1.3",
