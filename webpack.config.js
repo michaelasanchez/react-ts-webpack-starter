@@ -9,6 +9,8 @@ var ENV = process.env.npm_lifecycle_event;
 // var isTest = ENV === 'test' || ENV === 'test-watch';
 var isProd = ENV === 'build';
 
+const pageTitle = 'Template';
+
 module.exports = function makeWebpackConfig() {
 
   var config = {
@@ -92,9 +94,11 @@ module.exports = function makeWebpackConfig() {
       }
     ]
   };
+
   config.plugins = [
     new HtmlWebpackPlugin({
       template: './src/public/index.html',
+      title: pageTitle,
       inject: 'body'
     }),
     new MiniCssExtractPlugin(),
