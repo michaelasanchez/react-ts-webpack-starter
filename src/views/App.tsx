@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 import img from '../public/img/whoa.jpg';
-import { Navbar } from './Navbar';
+import { Navbar } from '../components/Navbar';
+import { strings } from '../shared';
 
-type AppProps = {};
+interface AppProps {};
 
-export const App: React.FunctionComponent<AppProps> = ({}) => {
+export const App: React.FC<AppProps> = ({}) => {
   return (
     <>
       <Navbar />
@@ -14,7 +15,7 @@ export const App: React.FunctionComponent<AppProps> = ({}) => {
           <img src={img} />
         </div>
         <br />
-        <h4>hi</h4>
+        <h4>{strings.homeText}</h4>
       </main>
     </>
   );
