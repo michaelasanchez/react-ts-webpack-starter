@@ -1,9 +1,10 @@
 import * as React from 'react';
 import GoogleLogin, { GoogleLogout } from 'react-google-login';
 import img from '../public/img/whoa.jpg';
-import { Navbar } from './Navbar';
+import { Navbar } from '../components/Navbar';
+import { strings } from '../shared';
 
-type AppProps = {};
+interface AppProps {};
 
 const refreshTokenSetup = (res: any) => {
   let refreshTiming = (res.tokenObj.expires_in || 3600 - 5 * 60) * 1000;
@@ -28,7 +29,7 @@ const onFailure = (response: any) => {
   console.log('[Login failed] res:', response);
 };
 
-export const App: React.FunctionComponent<AppProps> = ({}) => {
+export const App: React.FC<AppProps> = ({}) => {
   const [success, setSuccess] = React.useState<boolean>(false);
   const handleSuccess = (response: any) => {
     setSuccess(true);
@@ -38,6 +39,7 @@ export const App: React.FunctionComponent<AppProps> = ({}) => {
     setSuccess(false);
     onFailure(response);
   };
+  
   return (
     <>
       <Navbar />
@@ -46,7 +48,7 @@ export const App: React.FunctionComponent<AppProps> = ({}) => {
           <img src={img} />
         </div>
         <br />
-        <h4>{success ? 'hi there' : 'oh no'}</h4>
+        <h4>{success ? strings.homeText : 'oh no'}</h4>
         <GoogleLogin
           clientId="761782415642-dmpa7o13ppv0h3qa0su755368jd72qfu.apps.googleusercontent.com"
           buttonText="Login"
