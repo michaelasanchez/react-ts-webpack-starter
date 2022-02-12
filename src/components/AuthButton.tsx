@@ -11,7 +11,7 @@ interface AuthButtonProps {
 const AuthButton: React.FC<AuthButtonProps> = (props) => {
   return (
     <>
-      {!props.authState.signInLoaded || !props.authState.signOutLoaded ? (
+      {props.authState.loading ? (
         // <div className="spinner-container">
         <Spinner animation="border" size="sm" variant="secondary" />
       ) : (
