@@ -1,28 +1,27 @@
 import * as React from 'react';
-import { Navbar } from '../components/Navbar';
-import { useAuth } from '../hooks/useAuth';
 import img from '../public/img/whoa.jpg';
-import { strings } from '../shared';
+import { Navbar } from './Navbar';
 
 interface AppProps {}
 
 export const App: React.FC<AppProps> = ({}) => {
-  const authState = useAuth();
+  // const authState = useAuth();
 
   return (
     <>
-      <Navbar authState={authState} />
+      <Navbar />
       <main>
         <div className="img-container">
           <img src={img} />
         </div>
         <br />
         <h4>
-          {authState.loading
+          hi
+          {/* {authState.loading
             ? strings.homeLoadingText
             : !!authState.user
             ? strings.homeText
-            : strings.homeNoAuthText}
+            : strings.homeNoAuthText} */}
         </h4>
       </main>
     </>

@@ -1,6 +1,6 @@
 import React = require('react');
 import { Container, Navbar as BSNavbar } from 'react-bootstrap';
-import { MemoizedAuthButton } from '.';
+import { MemoizedAuthButton } from '../components/auth';
 import { useAuthState } from '../hooks';
 import { strings } from '../shared';
 

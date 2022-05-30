@@ -1,8 +1,8 @@
 import React = require('react');
 import { Nav, NavDropdown } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/esm/Spinner';
-import { useAuthState } from '../hooks';
-import { strings } from '../shared';
+import { useAuthState } from '../../hooks';
+import { strings } from '../../shared';
 
 interface AuthButtonProps {
   authState: useAuthState;

@@ -1,2 +1,1 @@
-export * from './AuthButton';
-export * from './Navbar';
+export * from '../views/Navbar';
