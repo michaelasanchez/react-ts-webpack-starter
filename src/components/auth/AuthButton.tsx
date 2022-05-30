@@ -24,13 +24,13 @@ const AuthButton: React.FC<AuthButtonProps> = (props) => {
               align="end"
             >
               <NavDropdown.Item onClick={() => props.authState.signOut()}>
-                {strings.auth.signOutButtonLabel}
+                {strings.components.auth.button.signOutButtonLabel}
               </NavDropdown.Item>
             </NavDropdown>
           ) : (
             <Nav.Item>
               <Nav.Link onClick={() => props.authState.signIn()}>
-                {strings.auth.signInButtonLabel}
+                {strings.components.auth.button.signInButtonLabel}
               </Nav.Link>
             </Nav.Item>
           )}

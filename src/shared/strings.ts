@@ -1,7 +1,15 @@
 export const strings = {
-  auth: { signInButtonLabel: 'Login', signOutButtonLabel: 'Logout' },
-  navbar: { label: 'Navbar' },
-  homeText: 'hi',
-  homeLoadingText: 'hold up',
-  homeNoAuthText: 'oh no',
+  components: {
+    auth: {
+      button: { signInButtonLabel: 'Login', signOutButtonLabel: 'Logout' }
+    },
+    navbar: { label: 'Navbar' }
+  },
+  views: {
+    app: {
+      homeText: 'hi',
+      homeLoadingText: 'hold up',
+      homeNoAuthText: 'oh no',
+    }
+  }
 };

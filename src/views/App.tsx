@@ -18,10 +18,10 @@ export const App: React.FC<AppProps> = ({}) => {
         <h4>
           hi
           {/* {authState.loading
-            ? strings.homeLoadingText
+            ? strings.view.app.homeLoadingText
             : !!authState.user
-            ? strings.homeText
-            : strings.homeNoAuthText} */}
+            ? strings.view.app.homeText
+            : strings.view.app.homeNoAuthText} */}
         </h4>
       </main>
     </>
